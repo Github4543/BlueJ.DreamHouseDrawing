@@ -16,6 +16,7 @@ public class Picture
     private Square window;
     private Triangle roof;
     private Circle sun;
+    
 
     /**
      * Constructor for objects of class Picture
@@ -53,6 +54,10 @@ public class Picture
         sun.moveVertical(-10);
         sun.changeSize(60);
         sun.makeVisible();
+        sun.slowMoveVertical(190);
+        
+        
+        
     }
 
     /**
@@ -83,4 +88,14 @@ public class Picture
         }
     }
 
-}
+    public void sunset()
+    {
+      if(wall != null)  //make the sun go down
+      {
+         
+          sun.slowMoveVertical(190);
+      }
+
+     }
+    }
+    
